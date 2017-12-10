@@ -344,6 +344,10 @@ section {
     color: #f99400;
 }
 
+.team .description {
+    color: #fff;
+}
+
 /* Partners Section */
 .partners .container {
     display: flex;
