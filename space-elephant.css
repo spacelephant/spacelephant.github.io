@@ -1,0 +1,391 @@
+@import 'fonts/poppins/poppins.css';
+
+/* Common */
+/* Reset */
+* {
+    margin: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-family: Poppins;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h2 {
+    font-size: 1em;
+    color: #f99400;
+    display: inline;
+    padding: 10px 0px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 2em;
+    color: #530666;
+    margin-bottom: 10px;
+    font-family: Poppins;
+}
+
+h4 {
+    text-transform: uppercase;
+    color: #6F84FE;
+    padding: 10px 0px;
+    font-weight: 300;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.semi-bold {
+    font-weight: 600;
+}
+
+.bloc-title {
+    background-image: url(images/slide.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+section {
+    padding: 40px 0px;
+}
+
+.header {
+    position: relative;
+}
+
+.more {
+    text-align: left;
+}
+
+#main-more:hover {
+    animation: none;
+}
+
+#main-more {
+    animation: MainMore 1.8s infinite;
+    position: fixed;
+    width: 100%;
+    padding-left: 15%;
+    bottom: 30px;
+    z-index: 6;
+}
+
+@keyframes MainMore {
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.more a {
+    background-color: transparent;
+    border: 2px solid #F99400;
+    color: #F99400;
+    font-weight: bold;
+    padding: 5px 30px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 40px;
+}
+
+.container {
+    margin: 0px 15%;    
+    padding: 50px 0px 80px 0px;
+}
+
+/* Header Section */
+.header {
+    background-image: linear-gradient(-45deg, #3757B7, #3757BF 0%, #78308A 54%, #5A1A6A 100%);
+    height: 100vh;
+    padding: 0px;
+    position: relative;
+}
+.header .container {
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    flex-direction: column;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.header .container .content {
+    width: 50%;
+    height: 75vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.header .container .content h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.header .container .top span * {
+    vertical-align: middle;
+}
+
+.header .decentralized-mask-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    background-image: url(images/decentralized.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position-x: -50%;
+    background-position-Y: 70%;
+    opacity: 0.2;
+}
+
+.header .top {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.header .top .logo {
+    flex: 10;
+}
+
+.header .top .logo img {
+    height: 60px;
+}
+
+.header .top .mailto {
+    text-align: right;
+    margin-right: 10px;
+}
+
+.header .mailto a {
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.header .top .social-links a img,
+.header .top .mailto img,
+.team .team-member .social-link img {
+    height: 20px;
+    margin-left: 5px;
+}
+
+.header .container .content h1 span,
+.mission h3 span,
+.partners .description h3 span {
+    display: block;
+}
+
+.header .container .content p {
+    font-size: 1.3em;
+}
+
+/* Mission Section */
+.mission.container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.mission .sub-container {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.mission .sub-container .content {
+    padding-right: 50px;
+    min-width: 500px;
+}
+
+.mission .sub-container > div {
+    flex: 1;
+}
+
+.mission .values {
+    text-align: center;
+    padding: 40px 0px;
+}
+
+.mission .values img {
+    height: -webkit-fill-available;
+    max-height: 400px;
+}
+
+.mission p,
+.partners p {
+    margin-bottom: 20px;
+}
+
+/* Work Section */
+.work {
+    background-color: #F9F9F9;
+    position: relative;
+}
+
+.work h2 {
+    color: #530666
+}
+
+.work h3 {
+    color: #F99400;
+}
+
+.work .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.work .facilitate {
+    display: flex;
+    flex-direction: row;
+}
+
+.work .facilitate > div {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.work .facilitate img {
+    width: 220px;
+}
+
+.work .facilitate p {
+    font-weight: 400;
+}
+
+
+/* Team Section */
+.team {
+    background: url(images/mask.png), linear-gradient(-45deg, #DD9F44, #5945A7);
+    position: relative;
+}
+
+.team .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.team .team-members {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.team .team-member {
+    display: flex;
+    flex-direction: column;
+    background-color: #442ca059;
+    padding: 10px;
+    height: 250px;
+    width: 190px;
+    color: #fff;
+    margin: 50px 10px 50px 30px;
+}
+
+.team .team-member .social {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    position: relative;
+}
+
+.team .team-member .social .social-links {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+.team .team-member .social .social-links a.social-link {
+    display: block;
+}
+
+.team .team-member .photo {
+    position: absolute;
+    top: -60px;
+    left: -40px;
+}
+
+.team .team-member .photo img {
+    width: 160px;
+    height: 190px;
+    background-color: grey;
+
+}
+
+.team .team-member .coord {
+    text-align: left;
+    flex: 1;
+    padding-top: 25px
+}
+
+.team .team-member .coord .functions {
+    color: #f99400;
+}
+
+/* Partners Section */
+.partners .container {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 50px;
+}
+
+.partners .container .partner {
+    text-align: center;
+}
+
+.partners .container > div {
+    flex: 1;
+}
+
+.partners .container .partner img {
+    height: 80px;
+}
+
+.partners .description a,
+.partners .description a:hover,
+.partners .description a:active,
+.partners .description a:visited {
+    color: #530666;
+    font-weight: bold;
+}
+
+/* Footer Section */
+.footer {
+    padding: 10px 0px;
+    background-color: #530666;
+}
+
+.footer .container {
+    color: #fff;
+    padding: 20px 0px;
+}
+
+.footer .company a,
+.footer .company a:hover,
+.footer .company a:active
+.footer .company a:visited {
+    color: #f99400;
+    font-weight: bold;
+}

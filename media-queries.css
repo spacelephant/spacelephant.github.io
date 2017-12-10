@@ -1,0 +1,223 @@
+/* Smartphones (portrait) */
+@media only screen and (max-device-width : 480px) and (orientation : portrait) {
+    .header .top {
+        margin-top: 20px;
+        flex-direction: column-reverse;
+    }
+
+    .header .top .logo {
+        margin-top: 20vh;
+    }
+
+    .header .top .logo img {
+        width: 100%;
+        height: auto;
+    }
+
+    .header .top .mailto {
+        font-size: 2em;
+        margin-top: 2vh;
+    }
+
+    .header .top .mailto img {
+        height: 50px;
+    }
+
+    .header .top .social-links a img {
+        height: 50px;
+        margin: 20px;
+    }
+
+    .header .top .social-links {
+        margin-top: 5vh;
+    }
+    
+    .header .container .content {
+        height: 50vh;
+        
+    }
+
+    .header .container .content h1 {
+        font-size: 3em;
+    }
+
+    .header .container .content p {
+        font-size: 2em;
+    }
+
+    .header .decentralized-mask-bg {
+        background-size: 150%;
+    }
+
+    section.container,
+    section .container {
+        margin: 0px 5%;
+    }
+
+    #main-more {
+        padding-left: 0%;
+        text-align: center;
+        bottom: 10px;
+    }
+
+    #main-more a {
+        text-align: left;
+        position: relative;
+    }
+
+    .header .container .content {
+        width: 100%;
+    }            
+
+    .mission .values img {
+        height: auto;
+        max-height: none;
+    }
+
+    .team .team-members {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .team .team-members .team-member {
+        height: 500px;
+        width: 380px;
+    }
+
+    .team .team-members .team-member .photo img {
+        width: 320px;
+        height: 380px;
+    }
+
+    .team .team-members .team-member .social-links img {
+        height: 50px;
+        margin-bottom: 20px;
+    }
+
+    .team .team-member .coord {
+        padding-top: 160px;
+        font-size: 1.5em;
+    }
+
+    .team .description {
+        color: #fff;
+    }
+
+    .team {
+        background-color: linear-gradient(-75deg, #DD9F44, #5945A7);
+        background-size: contain; 
+    }
+
+    .team .more a {
+        border-color: #fff;
+        color: #fff;
+    }
+
+    .partners .container,
+    .work .container .facilitate {
+        flex-direction: column;
+    }
+
+    .work .container .facilitate {
+        margin-top: 50px;
+    }
+    
+    p {
+        font-size: 0.8em;
+        text-align: justify;
+    }
+
+    .footer {
+        font-size: 1.2em;
+    }
+}
+
+/* Smartphones (landscape) */
+@media only screen and (min-device-width : 480px) and (max-device-width : 768px) and (orientation : landscape) {
+    .header .container .content {
+        width: 100%;
+    }
+
+    section.container,
+    section .container {
+        margin: 0px 5%;
+    }
+
+    p {
+        font-size: 0.8em;
+        text-align: justify;
+    }
+
+    #main-more {
+        padding-left: 0%;
+        text-align: center;
+        bottom: 10px;
+    }
+
+    #main-more a {
+        text-align: left;
+        position: relative;
+    }
+}
+    
+    
+/* Tablette (landscape) */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    .header .container .content {
+        width: 80%;
+    }            
+    
+    .mission .content {
+        text-align: justify;
+    }
+
+    section {
+        padding: 0px;
+    }
+
+    section.container,
+    section .container {
+        margin: 0px 10%;
+    }
+
+    #main-more {
+        padding-left: 10%;
+    }
+}
+
+/* Tablette (portrait) */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    section.container,
+    section .container {
+        margin: 0px 10%;
+    }
+
+    .mission .content {
+        text-align: justify;
+    }
+
+    .header,
+    .header .container,
+    .header .container .content,
+    .header .decentralized-mask-bg {
+        height: 50vh;
+    }
+
+    .header .container .content {
+        width: 80%;
+    }
+    
+    .team .container {
+        margin: 0 5% !important;
+    }
+
+    .team .container p {
+        margin: 0 5%;
+    }
+
+    section {
+        padding: 0px;
+    }
+
+}
