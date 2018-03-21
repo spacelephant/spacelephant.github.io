@@ -8,24 +8,30 @@
     <title>Space Elephant</title>
     <link rel="stylesheet" href="space-elephant.css">
     <link rel="stylesheet" href="media-queries.css">
-    <script>       
+    <script>
         var loadListeners = function() {
             if(window.addEventListener) {
                 window.addEventListener("orientationchange", function() {
                     location.reload();
                 });
                 window.addEventListener("scroll", function() {
-                    var mainMore = document.getElementById("main-more");
+                    var down = document.getElementById("main-down");
+                    var top = document.getElementById("main-top");
                     if (document.documentElement.scrollTop === 0) {
-                        mainMore.style.display="block";
+                      down.style.display="block";
+                      top.style.display="none";
                     } else {
-                        mainMore.style.display="none";
+                      down.style.display="none";
+                      top.style.display="block";
                     }
                 })
             }
         };
     </script>
-    
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115765369-1"></script>
     <script>
@@ -67,8 +73,11 @@
         <div class="decentralized-mask-bg" />
         <div class="decentralized-blockchain-bg" />
     </section>
-    <div id="main-more" class="more">
-        <a href="#mission">More</a>
+    <div id="main-down" class="nav-down">
+      <i class="fas fa-angle-down fa-2x nav-top-down" title="Scroll down for more"></i>
+    </div>
+    <div id="main-top" class="nav-top">
+      <a href="#"><i class="fas fa-angle-double-up fa-2x nav-top-down" title="Go to top"></i></a>
     </div>
 
     <section id="mission" class="mission container">
@@ -98,9 +107,6 @@
             <div class="values">
                 <img src="images/values.png" />
             </div>
-        </div>
-        <div class="more">
-            <a href="#work">More</a>
         </div>
     </section>
 
@@ -138,11 +144,8 @@
                     </p>
                 </div>
             </div>
-            <div class="more">
-                <a href="#team">More</a>
-            </div>
         </div>
-        
+
     </section>
 
     <section id="team" class="team">
@@ -342,9 +345,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="more">
-                <a href="#partners">More</a>
             </div>
         </div>
         <div class="mask-bg"></div>

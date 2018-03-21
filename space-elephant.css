@@ -61,42 +61,49 @@ section {
     position: relative;
 }
 
-.more {
-    text-align: left;
+.nav-down {
+    text-align: right;
 }
 
-#main-more:hover {
+.nav-top {
+    text-align: right;
+}
+
+#main-down:hover {
     animation: none;
 }
 
-#main-more {
-    animation: MainMore 1.8s infinite;
+#main-down {
+    animation: Down 1.8s infinite;
     position: fixed;
-    width: 100%;
-    padding-left: 15%;
-    bottom: 30px;
+    width: 90%;
+    bottom: 0.5em;
     z-index: 6;
 }
 
-@keyframes MainMore {
+#main-top {
+    position: fixed;
+    width: 90%;
+    bottom: 0.5em;
+    z-index: 6;
+    display: none;
+}
+
+@keyframes Down {
     0%{opacity: 1;}
     50%{opacity: 0;}
     100%{opacity: 1;}
 }
 
-.more a {
-    background-color: transparent;
+.nav-top-down {
     border: 2px solid #F99400;
     color: #F99400;
-    font-weight: bold;
-    padding: 5px 30px;
+    padding: 10px 20px;
     border-radius: 5px;
-    position: absolute;
-    bottom: 40px;
 }
 
 .container {
-    margin: 0px 15%;    
+    margin: 0px 15%;
     padding: 50px 0px 80px 0px;
 }
 
