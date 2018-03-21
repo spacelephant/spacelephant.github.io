@@ -196,6 +196,11 @@ section {
 .header .top .mailto img,
 .team .team-member .social-link img {
     height: 20px;
+}
+
+.header .top .social-links a img,
+.header .top .mailto img,
+.team .team-member {
     margin-left: 5px;
 }
 
