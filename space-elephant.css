@@ -77,14 +77,14 @@ section {
     animation: Down 1.8s infinite;
     position: fixed;
     width: 90%;
-    bottom: 0.5em;
+    bottom: 3em;
     z-index: 6;
 }
 
 #main-top {
     position: fixed;
     width: 90%;
-    bottom: 0.5em;
+    bottom: 3em;
     z-index: 6;
     display: none;
 }
