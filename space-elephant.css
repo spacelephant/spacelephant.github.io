@@ -17,7 +17,6 @@ a {
 }
 
 h2 {
-    font-size: 1em;
     color: #f99400;
     display: inline;
     padding: 10px 0px;
@@ -26,7 +25,6 @@ h2 {
 }
 
 h3 {
-    font-size: 2em;
     color: #530666;
     margin-bottom: 10px;
     font-family: Poppins;
@@ -98,7 +96,7 @@ section {
 .nav-top-down {
     border: 2px solid #F99400;
     color: #F99400;
-    padding: 10px 20px;
+    padding: 5px 10px;
     border-radius: 5px;
 }
 
@@ -127,7 +125,6 @@ section {
 }
 
 .header .container .content {
-    width: 50%;
     height: 75vh;
     justify-content: center;
     display: flex;
@@ -137,11 +134,20 @@ section {
 
 .header .container .content h1 {
     margin-bottom: 20px;
-    font-size: 2.5em;
 }
 
 .header .container .top span * {
     vertical-align: middle;
+}
+
+.header .container .sub-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header .container .sub-container > div {
+  flex: 1;
 }
 
 .header .decentralized-mask-bg {
@@ -165,7 +171,7 @@ section {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 3vh;
 }
 
 .header .top .logo {
@@ -183,7 +189,7 @@ section {
 
 .header .mailto a {
     color: #fff;
-    font-size: 1.1em;
+    margin-left: 5px;
 }
 
 .header .top .social-links a img,
@@ -197,10 +203,6 @@ section {
 .mission h3 span,
 .partners .description h3 span {
     display: block;
-}
-
-.header .container .content p {
-    font-size: 1.3em;
 }
 
 /* Mission Section */
@@ -218,7 +220,7 @@ section {
 
 .mission .sub-container .content {
     padding-right: 50px;
-    min-width: 500px;
+    flex: 2;
 }
 
 .mission .sub-container > div {
@@ -228,11 +230,11 @@ section {
 .mission .values {
     text-align: center;
     padding: 40px 0px;
+    flex: 1;
 }
 
 .mission .values img {
-    height: -webkit-fill-available;
-    max-height: 400px;
+    width: 100%;
 }
 
 .mission p,
