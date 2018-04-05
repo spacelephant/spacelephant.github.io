@@ -36,9 +36,6 @@
     <script>
         var loadListeners = function() {
             if(window.addEventListener) {
-                window.addEventListener("orientationchange", function() {
-                    location.reload();
-                });
                 window.addEventListener("scroll", function() {
                     var down = document.getElementById("main-down");
                     var top = document.getElementById("main-top");
