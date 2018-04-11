@@ -25,7 +25,6 @@ h2 {
 h3 {
     color: #530666;
     margin-bottom: 10px;
-    font-family: Poppins;
 }
 
 h4 {
@@ -33,6 +32,13 @@ h4 {
     color: #6F84FE;
     padding: 10px 0px;
     font-weight: 300;
+}
+
+h5 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
 }
 
 .light {
@@ -43,14 +49,19 @@ h4 {
     font-weight: 600;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .bloc-title {
     background-image: url(images/slide.png);
     background-repeat: no-repeat;
     background-position: center center;
+    text-align: center;
 }
 
 section {
-    padding: 40px 0px;
+    padding: 80px 0px;
 }
 
 .header {
@@ -157,19 +168,15 @@ section {
 }
 
 .header .decentralized-mask-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
     height: 100vh;
     width: 100%;
     z-index: 1;
-    background-image: url(images/decentralized.svg);
+    background-image: url(images/ISOMETRIC.svg);
     background-color: transparent;
     background-repeat: no-repeat;
-    background-size: 75%;
-    background-position-x: -50%;
+    background-size: 50%;
+    background-position-x: 100%;
     background-position-Y: 70%;
-    opacity: 0.2;
 }
 
 .header .top {
@@ -180,8 +187,12 @@ section {
     margin-top: 3vh;
 }
 
+.header .top > span {
+  margin-right: 10px;
+}
+
 .header .top .logo {
-    flex: 10;
+    flex: 8;
 }
 
 .header .top .logo img {
@@ -216,36 +227,119 @@ section {
     display: block;
 }
 
+.header .isometric img {
+  width: 150%;
+}
+
+/* Section products */
+.products {
+  background-image: url(images/ellipse.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: #eeeeee;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.products .fil-ariane {
+  flex: 3;
+  color: lightgray;
+  text-transform: uppercase;
+  padding-left: 30px;
+}
+
+.products .fil-ariane .active {
+  color: #F99400;
+}
+
+.products .fil-ariane a {
+  color: lightgray;
+}
+
+.products .our-products {
+  flex: 5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.products .our-products .product {
+  background-image: url(images/icone-produit.svg);
+  background-size: 38%;
+  background-repeat: no-repeat;
+  background-position-x: 120%;
+  background-position-y: 100%;
+  background-color: #F99400;
+  color: white;
+  padding: 30px;
+  flex: 1;
+  margin: 10px;
+  position: relative;
+}
+
+.products .our-products .product .read-more {
+  border: 2px solid white;
+  padding: 5px 10px;
+  position: absolute;
+  bottom: 20px;
+}
+
+.products .our-products .product h4 {
+  color: white;
+  font-family: pop
+}
+
+.products .our-products .product p {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+
+.products .lets-go {
+  flex: 5;
+  padding-left: 30px;
+  margin-bottom: 10%;
+}
+
+.products .lets-go h2 {
+  font-size: 1em;
+  color: #530666;
+  font-weight: normal;
+}
+
+.products .lets-go h3 {
+  font-size: 1.5em;
+  display: flex;
+}
+
+.products .lets-go h3:after {
+  content:'';
+  flex:1;
+  margin:auto 1em;
+  height:0;
+  border-top:solid #530666 2px;
+}
+
 /* Mission Section */
-.mission.container {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
-.mission .sub-container {
-    display: flex;
-    align-items: center;
-    flex-flow: row wrap;
-}
-
 .mission .sub-container .content {
-    padding-right: 50px;
-    flex: 2;
+    display: flex;
+    flex-direction: row;
 }
 
-.mission .sub-container > div {
-    flex: 1;
+.mission .sub-container .content > div {
+  flex: 1;
 }
 
-.mission .values {
-    text-align: center;
-    padding: 40px 0px;
-    flex: 1;
+
+.mission .sub-container .content > div:first-child {
+  padding-right: 20px;
 }
 
-.mission .values img {
-    width: 100%;
+.mission .sub-container .content > div:last-child {
+  padding-left: 20px;
 }
 
 .mission p,
@@ -276,6 +370,7 @@ section {
 .work .facilitate {
     display: flex;
     flex-direction: row;
+    margin-top: 40px;
 }
 
 .work .facilitate > div {
@@ -285,17 +380,16 @@ section {
 }
 
 .work .facilitate img {
-    width: 220px;
+    width: 30%;
 }
 
 .work .facilitate p {
     font-weight: 400;
 }
 
-
 /* Team Section */
 .team {
-    background: url(images/mask.png), linear-gradient(-45deg, #DD9F44, #5945A7);
+    background-color: #4c3f76;
     position: relative;
 }
 
@@ -368,7 +462,49 @@ section {
     color: #fff;
 }
 
+/* Join Section */
+.join-us .container {
+  display: flex;
+  flex-direction: row;
+}
+
+.join-us .container > div {
+  flex: 1;
+}
+
+.join-us ul li {
+  list-style: none;
+}
+
+.join-us ul li:before {
+  content: "•";
+  color: #F99400;
+  margin-right: 5px;
+}
+
+.join-us .values {
+  text-align: center;
+}
+
+.join-us .values img {
+  width: 70%;
+}
+
 /* Partners Section */
+.partners {
+  background-color: #f99400;
+  color: white;
+}
+
+.partners .bloc-title {
+  background-image: url(images/slide_white.png);
+}
+
+.partners .bloc-title h2,
+.partners .bloc-title h3 {
+  color: white;
+}
+
 .partners .container {
     display: flex;
     flex-direction: row;
@@ -391,7 +527,7 @@ section {
 .partners .description a:hover,
 .partners .description a:active,
 .partners .description a:visited {
-    color: #530666;
+    color: white;
     font-weight: bold;
 }
 

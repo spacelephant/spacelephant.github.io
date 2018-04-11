@@ -37,6 +37,10 @@
       display: none;
     }
 
+    .header .decentralized-mask-bg {
+      background-image: none;
+    }
+
     section,
     .container,
     .partners .container {
@@ -49,8 +53,14 @@
 
     .partners .container,
     .work .container .facilitate,
-    .mission .sub-container {
+    .mission .sub-container .content,
+    .join-us .container,
+    .products .our-products {
         flex-direction: column;
+    }
+
+    .products {
+      flex-direction: column-reverse;
     }
 
     .container,
@@ -64,6 +74,10 @@
 
     .mission .values img {
       max-width: 50vw;
+    }
+
+    .products .fil-ariane {
+      display: none;
     }
 }
 
