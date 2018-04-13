@@ -511,6 +511,11 @@ section {
   width: 70%;
 }
 
+.join-us .mail-join {
+  color: #3c4c7d;
+  font-weight: bold;
+}
+
 /* Partners Section */
 .partners {
   background-color: #f99400;
