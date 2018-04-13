@@ -18,16 +18,13 @@
       margin-bottom: 2vh;
     }
 
-    .header .top .mailto {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      margin-right: 0px;
-    }
-
     .header .top .logo {
       margin-top: 5vh;
     }
+
+    .products .our-products {
+      flex-direction: column;
+  }
 
 }
 
@@ -37,8 +34,20 @@
       display: none;
     }
 
-    .header .decentralized-mask-bg {
-      background-image: none;
+    .header .top > span {
+      margin-right: 0px;
+    }
+
+    .header .social-links > * {
+      line-height: 50px;
+  }
+
+    .header .top .mailto {
+      margin-right: 0px;
+    }
+
+    .header .top .mailto .mailto-text {
+      display: none;
     }
 
     section,
@@ -54,8 +63,7 @@
     .partners .container,
     .work .container .facilitate,
     .mission .sub-container .content,
-    .join-us .container,
-    .products .our-products {
+    .join-us .container {
         flex-direction: column;
     }
 
@@ -76,9 +84,43 @@
       max-width: 50vw;
     }
 
+    .mission .sub-container .content > div:first-child,
+    .mission .sub-container .content > div:last-child {
+      padding: 0px;
+    }
+
+    .products {
+      align-items: center;
+    }
+
+    .products .our-products .product {
+      padding: 20px;
+    }
+
     .products .fil-ariane {
       display: none;
     }
+
+    .products .lets-go {
+      margin-bottom: 0px;
+      padding-left: 0px;
+      width: 100%;
+    }
+
+    .products .lets-go h2,
+    .products .lets-go h3 {
+      display: block;
+      text-align: center;
+    }
+
+    .products .lets-go h3:after {
+      display: none;
+    }
+
+    .header {
+      background: linear-gradient(-45deg, #3757B7, #3757BF 0%, #78308A 54%, #5A1A6A 100%);
+    }
+
 }
 
 
@@ -103,6 +145,14 @@
 
     #main-more {
         padding-left: 10%;
+    }
+
+    .products .lets-go {
+      flex: 3;
+    }
+
+    .products .our-products {
+      flex-direction: column;
     }
 }
 
@@ -138,6 +188,10 @@
 
     section {
         padding: 0px;
+    }
+
+    .products .lets-go {
+      flex: 3;
     }
 
 }
