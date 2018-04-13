@@ -1,0 +1,111 @@
+/*
+ * Space Elephant Branding Guide Style
+ *
+ */
+/* color codes */
+/* branding guide style sheet */
+body {
+  background-color: #e9eeff;
+  color: #530666;
+  font-family: 'Poppins', sans-serif; }
+
+/* background */
+.background-color-white {
+  background-color: white; }
+
+.background-color-black {
+  background-color: black; }
+
+.background-color-c1 {
+  background-color: #530666; }
+
+.background-color-c2 {
+  background-color: #f99400; }
+
+.background-color-c3 {
+  background-color: #3c4c7d; }
+
+.background-color-c4 {
+  background-color: #babecc; }
+
+.background-color-b1 {
+  background-color: #e9eeff; }
+
+.background-color-b2 {
+  background-color: #5945a7; }
+
+.background-color-b3 {
+  background: #76328d;
+  background: -webkit-linear-gradient(0deg, #76328d, #3f53b9);
+  background: linear-gradient(90 deg, #76328d, #3f53b9); }
+
+.background-color-b4 {
+  background-color: #f9f9f9; }
+
+/* colors */
+.color-white {
+  color: white; }
+
+.color-black {
+  color: black; }
+
+.color-c1 {
+  color: #530666; }
+
+.color-c2 {
+  color: #f99400; }
+
+.color-c3 {
+  color: #3c4c7d; }
+
+.color-c4 {
+  color: #babecc; }
+
+.color-b1 {
+  color: #e9eeff; }
+
+.color-b2 {
+  color: #5945a7; }
+
+.color-b3 {
+  background-color: #76328d; }
+
+.color-b4 {
+  color: #f9f9f9; }
+
+.colortitle {
+  color: white;
+  display: inline;
+  text-align: center;
+  font-weight: bold; }
+
+.colorblock p {
+  padding: 0;
+  margin: 0; }
+
+h1 {
+  font-family: "Poppins Black"; }
+
+.typo-light {
+  font-style: normal;
+  font-weight: 300; }
+
+.typo-regular {
+  font-style: normal;
+  font-weight: 400; }
+
+.typo-medium {
+  font-style: normal;
+  font-weight: 500; }
+
+.typo-semi-bold {
+  font-style: normal;
+  font-weight: 600; }
+
+.typo-bold {
+  font-style: normal;
+  font-weight: 700; }
+
+.typo-black {
+  font-style: normal;
+  font-family: "Poppins Black"; }

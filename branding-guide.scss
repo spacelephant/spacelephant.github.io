@@ -1,0 +1,102 @@
+/*
+ * Space Elephant Branding Guide Style
+ *
+ */
+
+/* color codes */
+$color-c1: #530666;
+$color-c2: #f99400;
+$color-c3: #3c4c7d;
+$color-c4: #babecc;
+$color-b1: #e9eeff;
+$color-b2: #5945a7;
+$color-b3a: #76328d;
+$color-b3b: #3f53b9;
+$color-b4: #f9f9f9;
+
+/* branding guide style sheet */
+body {
+  background-color: $color-b1;
+  color: $color-c1;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* background */
+.background-color-white {  background-color: white; }
+.background-color-black {  background-color: black; }
+
+.background-color-c1 {  background-color: $color-c1; }
+.background-color-c2 {  background-color: $color-c2; }
+.background-color-c3 {  background-color: $color-c3; }
+.background-color-c4 {  background-color: $color-c4; }
+.background-color-b1 {  background-color: $color-b1; }
+.background-color-b2 {  background-color: $color-b2; }
+.background-color-b3 {  
+  background: $color-b3a;
+  background: -webkit-linear-gradient(0deg, $color-b3a, $color-b3b);
+  background: linear-gradient(90
+  deg, $color-b3a, $color-b3b);
+}
+.background-color-b4 {  background-color: $color-b4; }
+
+/* colors */
+.color-white {  color: white; }
+.color-black {  color: black; }
+
+.color-c1 {  color: $color-c1; }
+.color-c2 {  color: $color-c2; }
+.color-c3 {  color: $color-c3; }
+.color-c4 {  color: $color-c4; }
+.color-b1 {  color: $color-b1; }
+.color-b2 {  color: $color-b2; }
+.color-b3 {  
+  background-color: $color-b3a; 
+}
+.color-b4 {  color: $color-b4; }
+
+.colortitle {
+  color: white;
+  display: inline;
+  text-align: center;
+  font-weight: bold;
+}
+
+.colorblock p
+{
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+  font-family: "Poppins Black";
+}
+
+.typo-light {
+  font-style: normal;
+  font-weight: 300;
+}
+
+.typo-regular {
+  font-style: normal;
+  font-weight: 400;
+}
+
+.typo-medium {
+  font-style: normal;
+  font-weight: 500;
+}
+
+.typo-semi-bold {
+  font-style: normal;
+  font-weight: 600;
+}
+
+.typo-bold {
+  font-style: normal;
+  font-weight: 700;
+}
+
+.typo-black {
+  font-style: normal;
+  font-family: "Poppins Black";
+}
