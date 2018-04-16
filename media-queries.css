@@ -46,7 +46,16 @@
       margin-right: 0px;
     }
 
-    .header .top .mailto .mailto-text {
+    .header .top .join-us {
+      margin-right: 7px;
+    }
+
+    .header .social-links > a {
+      margin: 0px 5px;
+    }
+
+    .header .top .mailto .mailto-text,
+    .header .top .join-us .join-us-text {
       display: none;
     }
 
