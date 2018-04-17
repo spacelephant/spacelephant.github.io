@@ -587,3 +587,8 @@ section {
     color: #f99400;
     font-weight: bold;
 }
+
+.footer .copyright {
+  text-align: center;
+  margin-top: 40px;
+}
