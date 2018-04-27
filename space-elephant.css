@@ -281,10 +281,9 @@ section {
 
 .products .our-products .product {
   background-image: url(images/icone-produit.svg);
-  background-size: 38%;
+  background-size: 100px;
   background-repeat: no-repeat;
-  background-position-x: 120%;
-  background-position-y: 100%;
+  background-position: 110% 100%;
   background-color: #F99400;
   color: white;
   padding: 30px;
@@ -305,7 +304,7 @@ section {
   font-family: pop
 }
 
-.products .our-products .product p {
+.products .our-products .product > div {
   margin-top: 20px;
   margin-bottom: 40px;
 }
