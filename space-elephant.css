@@ -93,9 +93,9 @@ section {
 
 #main-down {
   animation: Down 1.8s infinite;
-  position: fixed;
-  width: 90%;
-  bottom: 3em;
+  position: absolute;
+  align-self: center;
+  bottom: 2em;
   z-index: 6;
 }
 
