@@ -271,6 +271,12 @@ section {
   color: lightgray;
 }
 
+.products .container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
 .products .our-products {
   flex: 5;
   display: flex;
@@ -310,7 +316,7 @@ section {
 
 
 .products .lets-go {
-  flex: 5;
+  flex: 3;
   padding-left: 30px;
   margin-bottom: 10%;
 }
