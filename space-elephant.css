@@ -598,6 +598,9 @@ section {
 .footer .info > div {
   flex: 1;
 }
+.footer .info .left {
+  flex: 2;
+}
 
 .footer .info .left .legal {
   margin-top: 20px;
@@ -608,6 +611,7 @@ section {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  flex: 1;
 }
 
 .footer .info .right > * {
