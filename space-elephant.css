@@ -599,6 +599,10 @@ section {
   flex: 1;
 }
 
+.footer .info .left .legal {
+  margin-top: 20px;
+}
+
 .footer .info .right {
   text-align: end;
   display: flex;
