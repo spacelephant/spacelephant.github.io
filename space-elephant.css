@@ -79,14 +79,6 @@ section {
   position: relative;
 }
 
-.nav-down {
-  text-align: right;
-}
-
-.nav-top {
-  text-align: right;
-}
-
 #main-down:hover {
   animation: none;
 }
@@ -101,10 +93,11 @@ section {
 
 #main-top {
   position: fixed;
-  width: 90%;
   bottom: 3em;
   z-index: 6;
-  display: none;
+  align-self: center;
+  width: 100%;
+  text-align: center;
 }
 
 @keyframes Down {
