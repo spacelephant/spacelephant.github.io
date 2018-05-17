@@ -40,15 +40,12 @@
         var loadListeners = function () {
             if (window.addEventListener) {
                 window.addEventListener("scroll", function () {
-                    var down = document.getElementById("main-down");
                     var top = document.getElementById("main-top");
 
                     const scrollTop = Math.max(window.pageYOffset, document.documentElement.scrollTop, document.body.scrollTop);
                     if (scrollTop < 150) {
-                        down.style.display = "block";
                         top.style.display = "none";
                     } else {
-                        down.style.display = "none";
                         top.style.display = "block";
                     }
                 });
