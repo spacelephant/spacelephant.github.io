@@ -232,6 +232,34 @@ section {
   width: 150%;
 }
 
+/* navigation */
+
+#vertical-nav {
+  position: fixed;
+  z-index: 1000;
+  top: 45%;
+  bottom: auto;
+  -webkit-transform: translateY(-45%);
+  -moz-transform: translateY(-45%);
+  -ms-transform: translateY(-45%);
+  -o-transform: translateY(-45%);
+  transform: translateY(-45%);
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+#vertical-nav li,
+#vertical-nav a {
+  color: #babecc;
+}
+
+#vertical-nav .is-selected,
+#vertical-nav .is-selected * {
+  color: #f99400;
+}
+
 /* Section products */
 .products {
   background-image: url(images/ellipse.png);
