@@ -1,6 +1,5 @@
 $(document).ready(function($) {
-  var contentSections = $("section"),
-    navigationItems = $("#vertical-nav a");
+  const CONTENT_SECTIONS = $("section");
 
   updateNavigation();
 
@@ -16,58 +15,71 @@ $(document).ready(function($) {
   }
 
   function updateMainTop() {
-    var top = document.getElementById("main-top");
+    const TOP = document.getElementById("main-top");
 
-    const scrollTop = Math.max(
+    let scrollTop = Math.max(
       window.pageYOffset,
       document.documentElement.scrollTop,
       document.body.scrollTop
     );
     if (scrollTop < 150) {
-      top.style.display = "none";
+      TOP.style.display = "none";
     } else {
-      top.style.display = "block";
+      TOP.style.display = "block";
     }
   }
 
   function updateNavigation() {
-    const nav = $("#vertical-nav");
-    if (window.matchMedia("(min-width: 768px)").matches) {
-      contentSections.each(function() {
+    const NAV = $("#vertical-nav");
+    const FIRST_SECTION = $("#products");
+    const PRODUCT_COINTAINER = FIRST_SECTION.find(".container");
+
+    if (isNavMenuDisplayable(NAV, PRODUCT_COINTAINER)) {
+      let newSelected, oldSelected, currentItem;
+      CONTENT_SECTIONS.each(function() {
         $this = $(this);
 
-        var sectionId = $this.attr("id");
-        var section = $('#vertical-nav a[href="#' + sectionId + '"]')[0];
-        if (section != undefined) {
+        let sectionId = $this.attr("id");
+        let menuItem = $('#vertical-nav a[href="#' + sectionId + '"]')[0];
+        if (menuItem !== undefined) {
+          currentItem = $(menuItem).parent();
           if (
             $this.offset().top - $(window).height() / 2 <=
               $(window).scrollTop() &&
             $this.offset().top + $this.height() - $(window).height() / 2 >=
               $(window).scrollTop()
           ) {
-            $(section)
-              .parent()
-              .addClass("is-selected");
+            newSelected = currentItem;
           } else {
-            $(section)
-              .parent()
-              .removeClass("is-selected");
+            if (currentItem.hasClass("is-selected")) {
+              oldSelected = currentItem;
+            }
           }
         }
       });
 
-      const firstSection = $("#products");
+      if (newSelected) {
+        newSelected.addClass("is-selected");
+        if (oldSelected) {
+          oldSelected.removeClass("is-selected");
+        }
+      }
 
       if (
         $(window).scrollTop() <
-        firstSection.offset().top - $(window).height() / 3
+        FIRST_SECTION.offset().top - $(window).height() / 3
       ) {
-        nav.addClass("hidden");
+        NAV.addClass("hidden");
       } else {
-        nav.removeClass("hidden");
+        NAV.removeClass("hidden");
       }
     } else {
-      nav.addClass("hidden");
+      NAV.addClass("hidden");
     }
+  }
+
+  function isNavMenuDisplayable(navMenu, productSectionContainer) {
+    return (parseInt(navMenu.width()) < parseInt(productSectionContainer.css("margin-left")))
+
   }
 });
