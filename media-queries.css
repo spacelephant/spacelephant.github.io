@@ -1,7 +1,16 @@
 /* Smartphones (portrait) */
-@media only screen and (max-device-width: 480px) and (orientation: portrait) {
+@media only screen and (max-device-width: 576px) and (orientation: portrait) {
+  .header {
+    height: auto;
+    padding-bottom: 40px;
+  }
+
   .header .top {
     flex-direction: column-reverse;
+  }
+
+  .header .top .social-links a.join-us {
+    margin-right: 25px;
   }
 
   .team .team-members {
@@ -19,12 +28,14 @@
   }
 
   .header .top .logo {
-    margin-top: 5vh;
+    margin: 70px 0px;
   }
 
   .products .container .our-products {
     flex-direction: column;
+    align-items: center;
   }
+
 }
 
 /* Smartphones (landscape) */
@@ -138,6 +149,15 @@
       #5a1a6a 100%
     );
   }
+
+  .footer .company.container .info {
+    flex-direction: column;
+  }
+
+  .footer .company.container .info .footer-social-links {
+    justify-content: center;
+    margin-top: 40px;
+  }
 }
 
 /* Tablette (landscape) */
@@ -161,10 +181,6 @@
 
   #main-more {
     padding-left: 10%;
-  }
-
-  .products .our-products {
-    flex-direction: column;
   }
 }
 
@@ -200,5 +216,22 @@
 
   section {
     padding: 0px;
+  }
+}
+
+
+@media screen and (min-width: 1600px) {
+  .products .container {
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .mailto-text {
+    display: none;
+  }
+
+  .header .top .join-us, .header .top .mailto {
+    margin-right: 2px;
   }
 }

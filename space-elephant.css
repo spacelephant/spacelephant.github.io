@@ -177,8 +177,8 @@ section {
   padding-top: 3vh;
 }
 
-.header .top > span {
-  margin-right: 10px;
+.header .top .social-links a {
+  margin-right: 15px;
 }
 
 .header .top .join-us .fa-layers,
@@ -186,8 +186,8 @@ section {
   margin-right: 1px;
 }
 
-.header .top .join-us .join-us-text {
-  margin-left: 7px;
+.header .top .join-us .join-us-text, .header .top .mailto-text {
+  margin-left: 20px;
 }
 
 .header .top .logo {
@@ -291,7 +291,7 @@ section {
 
 .products .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
   width: 100%;
 }
 
@@ -299,21 +299,24 @@ section {
   flex: 5;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .products .our-products .product {
-  background-image: url(images/icone-produit.svg);
-  background-size: 100px;
-  background-repeat: no-repeat;
-  background-position-x: 110%;
-  background-position-y: 100%;
   background-color: #f99400;
   color: white;
   padding: 30px;
   flex: 1;
   margin: 10px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.products .our-products .product img {
+  height: 100px;
+  margin: 20px auto;
 }
 
 .products .our-products .product .read-more {
@@ -336,7 +339,7 @@ section {
 .products .lets-go {
   flex: 3;
   padding-left: 30px;
-  margin-bottom: 10%;
+  margin-bottom: 20px;
 }
 
 .products .lets-go h2 {
@@ -485,6 +488,7 @@ section {
 
 .team .team-member .social .social-links a.social-link {
   display: block;
+  margin-bottom: 10px;
 }
 
 .team .team-member .photo {
@@ -626,7 +630,7 @@ section {
 }
 
 .footer .info .right > * {
-  margin-right: 0.3vw;
+  margin-right: 20px;
 }
 
 .footer .company a,
